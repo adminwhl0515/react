@@ -1,0 +1,2 @@
+export const HOME_NAV_LIST = '/local/restapi/shopping/openapi/entries?latitude=40.117618&longitude=116.250627&templates[]=main_template&templates[]=favourable_template&templates[]=svip_template'
+export const KIND_NAV_LIST = '/shop/admin/long/classinfo?shopid=103&status=1'

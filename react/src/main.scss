@@ -1,0 +1,124 @@
+@import '@/lib/reset.scss';
+
+html, body, #root, .App {
+  @include rect(100%, 100%);
+}
+
+.App {
+  @include flexbox();
+  @include flex-direction(column);
+  
+  .main {
+      @include flex();
+      @include rect(100%, auto);
+      @include flexbox();
+      @include flex-direction(column);
+      header {
+        @include rect(100%, 0.45rem);
+        @include background-color(#f66);
+        @include flexbox();
+        
+        .left, .center, .right{
+          @include flexbox();
+          @include flex-direction(column);
+          @include justify-content();
+          @include align-items();
+        }
+
+        .left{
+          @include rect(0.3rem, 100%);
+
+        }
+        .center{
+          @include flex();
+          @include rect(auto, 100%);
+        }
+        .right{
+          @include rect(0.3rem, 100%);
+        }
+      }
+      .content{
+        @include flex();
+        @include rect(100%, auto);
+        @include overflow();
+
+        .prolist {
+          
+          li{
+            @include rect(100%, 1rem);
+            @include border(0 0 1px 0, #ccc);
+            @include flexbox();
+            img{
+              @include rect(0.9rem, 0.9rem);
+              @include margin(0.05rem);
+            }
+            
+            .proinfo{
+              @include flex();
+
+            }
+          }
+        }
+        &.kindContent{
+          .txh_1{
+            @include flexbox();
+            @include rect(auto, 90%)
+          }
+          .kindTop{
+            @include flexbox();
+            @include rect(auto, 10%);
+            @include overflow();
+            a{
+              @include rect(0.5rem, 100%);
+              @include border(0 0 1px 0, #ccc);
+              @include flexbox();
+              @include flex-direction();
+              @include justify-content
+              @include align-items();
+              @include text-color(#ccc);
+              &.active{
+                @include text-color(#f66)
+              }
+            }
+            li{
+              @include rect(100%, 100%);
+            }
+          }
+          .kindTeft{
+            @include rect(23%, 100%);
+            @include overflow();
+          }
+          .kindBottom{
+            @include flexbox();
+            @include rect(77%, 100%);
+            @include flex-direction(column);
+            @include overflow;
+          }
+        }
+      }
+  }
+  footer{
+    @include rect(100%, 0.5rem);
+    @include background-color(#ccc);
+    
+      ul{
+        @include rect(100%, 100%);
+        @include flexbox();
+          li{
+            @include flex();
+            @include rect(auto, 100%);
+            @include flexbox();
+            @include flex-direction(column);
+            @include justify-content();
+            @include align-items();
+            
+            a {
+              @include text-color(#333);
+              &.active{
+                @include text-color(#f66);
+              }
+            }
+          }
+      }
+  }
+}

@@ -1,0 +1,11 @@
+现在这个模板只需要安装好cnpm就可以用了
+cnpm i 
+cnpm i antd antd-mobile -S
+cnpm i babel-plugin- import -D
+复制webpack.config.dev.js和webpack.config.prod.js两个文件到node_modules ---react-scripts ---congig 覆盖掉原先的
+cnpm i react-router-dom -S
+cnpm i redux -S
+
+
+-----详情可加作者qq:973506381
+------------作者： 胖虎
